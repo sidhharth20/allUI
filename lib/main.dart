@@ -11,6 +11,7 @@ import 'package:allwidgets/animations2.dart';
 import 'package:allwidgets/assignmentMod4.dart';
 import 'package:allwidgets/bottomsheet.dart';
 import 'package:allwidgets/d1.dart';
+import 'package:allwidgets/finalAssignment/page1.dart';
 import 'package:allwidgets/sqlite.dart';
 import 'package:flutter/material.dart';
 
@@ -39,7 +40,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home:Scaffold(),
+      home: page1(),
     );
   }
 }
