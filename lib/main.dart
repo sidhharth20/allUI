@@ -11,6 +11,7 @@ import 'package:allwidgets/animations2.dart';
 import 'package:allwidgets/assignmentMod4.dart';
 import 'package:allwidgets/bottomsheet.dart';
 import 'package:allwidgets/d1.dart';
+import 'package:allwidgets/sqlite.dart';
 import 'package:flutter/material.dart';
 
 void main(){
@@ -25,10 +26,20 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   @override
+  void initState() {
+    addData();
+    super.initState();
+  }
+
+  void addData(){
+    DBhelper().addData("Hello", "sidhharth");
+    DBhelper().addData("very good", "LAKSH");
+  }
+  @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Assignmentmod6(),
+      home:Scaffold(),
     );
   }
 }
